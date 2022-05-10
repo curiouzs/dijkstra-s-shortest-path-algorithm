@@ -23,7 +23,7 @@ Select a specific number of nodes with distance
 ![ alt text for screen readers](./images/map1.jpg "Map around my house")
 
 ## PROGRAM
-
+```python
 
 %matplotlib inline
 import matplotlib.pyplot as plt
@@ -267,6 +267,8 @@ print("GoalStateWithPath:{0}".format(goal_state_path))
 path_states(goal_state_path)
 print("Total Distance={0} Kilometers".format(goal_state_path.path_cost))
     
+    
+```
 ## OUTPUT:
 
 Justify that the algorithm always returns the shortest path:
