@@ -226,7 +226,8 @@ print("\nGoalStateWithPath:{0}".format(goal_state_path_4))
 print("Total Distance={0} Kilometers".format(goal_state_path_4.path_cost))
 print("Route:{0}".format(path_states(goal_state_path_4)))
 
-
+```
+8
 ## Solution Justification:
 
 In best-first search algorithm, the selected node is verified as parent node or not and starts its search, within the least distance it will be reaching the goal node. Search near every two nodes are always considered with its shortest distance.
