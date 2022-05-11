@@ -14,13 +14,24 @@ Identify a location in the google map:
 ### STEP 2:
 Select a specific number of nodes with distance
 
-### STEP -> Write your own steps:
+### STEP 3:
+
+Create a dictionary with all the node pairs (keys) and their respective distances as the values.
+
+### Step 4:
+
+Implement the search algorithm by passing any node and f(node) to find the Best route.
+
+### Step 5:
+
+Display the route sequence
+
+
 
 
 ## ROUTE MAP
 #### Include your own map
-#### Example map
-![ alt text for screen readers](./images/map1.jpg "Map around my house")
+
 
 ## PROGRAM
 ```python
@@ -215,4 +226,12 @@ print("\nGoalStateWithPath:{0}".format(goal_state_path_4))
 print("Total Distance={0} Kilometers".format(goal_state_path_4.path_cost))
 print("Route:{0}".format(path_states(goal_state_path_4)))
 
+
+## Solution Justification:
+
+In best-first search algorithm, the selected node is verified as parent node or not and starts its search, within the least distance it will be reaching the goal node. Search near every two nodes are always considered with its shortest distance.
+
+## RESULT:
+
+Thus an algorithm to find the route from the source to the destination point using best-first search is developed and executed successfully.
 
