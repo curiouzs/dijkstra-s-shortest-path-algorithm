@@ -19,6 +19,7 @@ Display the route sequence
 
 ## ROUTE MAP
 #### map
+<img src="https://user-images.githubusercontent.com/75234807/167794231-accea352-a7a6-4e58-a490-bd511616a193.png" height="45%" width="65%">
 
 ## PROGRAM
 ```python
@@ -138,15 +139,13 @@ Home_nearby_locations = Map(
 
 r0 = RouteProblem('Home', 'Tiruvottiyur', map=Home_nearby_locations)
 goal_state_path_0=best_first_search(r0,g)
-
 print("GoalStateWithPath:{0}".format(goal_state_path_0))
 print("Total Distance={0} Kilometers".format(goal_state_path_0.path_cost))
 print("Route:{0}".format(path_states(goal_state_path_0)))
 ```
-## OUPPUT :
-
+## OUTPUT :
+![dfs](https://user-images.githubusercontent.com/75234646/175819849-7990d24c-1f8a-4bb5-b002-e724972d0c6b.png)
 ## Solution Justification:
 In best-first search algorithm, the selected node is verified as parent node or not and starts its search, within the least distance it will be reaching the goal node. Search near every two nodes are always considered with its shortest distance.
-
 ## RESULT:
 Thus an algorithm to find the route from the source to the destination point using best-first search is developed and executed successfully.
